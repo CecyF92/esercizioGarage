@@ -1,0 +1,11 @@
+/public
+package.json
+package-lock.json
+README.md
+/public/bundle.js
+/.vscode
+/src/lib
+tsconfig.json
+.eslintrc.json
+.gitignore
+jest.config.ts
