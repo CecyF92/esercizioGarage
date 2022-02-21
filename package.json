@@ -2,7 +2,7 @@
     "name": "templateproject",
     "version": "1.0.0",
     "scripts": {
-        "build": "esbuild src/main.ts --bundle --minify --outfile=public/bundle.js",
+        "build": "esbuild src/main.ts --bundle --outfile=public/bundle.js",
         "dev": "esbuild src/main.ts --bundle --watch --outfile=public/bundle.js",
         "eslint": "eslint src/**/*.ts --fix",
         "test": "jest",

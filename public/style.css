@@ -1,1 +1,4 @@
-/*your style code*/
+.divForm, #tabella{
+    padding: 3% 3% 3% 3%;
+    text-align: center;
+}
