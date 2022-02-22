@@ -30,8 +30,7 @@ namespace Grafica{
             </div>
             <div class="col">
                 <select class="form-select" aria-label="colore" id="colore">
-                    <option selected>SCEGLI COLORE</option>
-                    <option value="1">BIANCO</option>
+                    <option value="1" selected>BIANCO</option>
                     <option value="2">NERO</option>
                     <option value="3">ROSSO</option>
                     <option value="4">GIALLO</option>
@@ -58,8 +57,7 @@ namespace Grafica{
             </div>
             <div class="col">
                 <select class="form-select" aria-label="scelta" id="scelta">
-                    <option selected>SCEGLI COLORE</option>
-                    <option value="T">TARGA</option>
+                    <option value="T" selected>TARGA</option>
                     <option value=MA">MARCA</option>
                     <option value="MO">MODELLO</option>
                     <option value="C">COLORE</option>
