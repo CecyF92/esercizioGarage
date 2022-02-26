@@ -1,6 +1,8 @@
-namespace Grafica{
-    export const inserisciVettura = (divElement: HTMLDivElement) =>{
-        return divElement.innerHTML = `
+import { inserisci, ricerca } from './main'
+
+namespace Grafica {
+    export const inserisciVettura = (divElement: HTMLDivElement) => {
+        divElement.innerHTML = `
         <div class="row">
             <div class="col">
                 <label for="targa" class="form-label">Targa</label>
@@ -47,10 +49,27 @@ namespace Grafica{
         <hr>
         <button class="btn btn-primary" id="salva">Salva</button>
         `
+        const targa = window.document.getElementById(
+            'targa'
+        ) as HTMLInputElement
+        const marca = window.document.getElementById(
+            'marca'
+        ) as HTMLInputElement
+        const tipo = window.document.getElementById('tipo') as HTMLInputElement
+        const colore = window.document.getElementById(
+            'colore'
+        ) as HTMLSelectElement
+        const anno = window.document.getElementById('anno') as HTMLInputElement
+        const salva = window.document.getElementById(
+            'salva'
+        ) as HTMLButtonElement
+        salva.addEventListener('click', function () {
+            return inserisci(targa, marca, tipo, colore, anno)
+        })
     }
 
     export const ricercaVettura = (divElement: HTMLDivElement) => {
-        return divElement.innerHTML = `
+        divElement.innerHTML = `
         <div class="row">
             <div class="col">
                 <label for="tipo" class="form-label">Da cosa vuoi fare la ricerca: </label>
@@ -74,6 +93,18 @@ namespace Grafica{
         <hr>
         <button class="btn btn-primary" id="search">Ricerca</button>
         `
+        const scelta = window.document.getElementById(
+            'scelta'
+        ) as HTMLSelectElement
+        const valore = window.document.getElementById(
+            'valore'
+        ) as HTMLInputElement
+        const search = window.document.getElementById(
+            'search'
+        ) as HTMLButtonElement
+        search.addEventListener('click', function () {
+            return ricerca(scelta, valore)
+        })
     }
 }
 
